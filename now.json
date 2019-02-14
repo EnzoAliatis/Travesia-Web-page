@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "travesia-web-desktop",
+  "alias": [
+    "travesia-web-desktop"
+  ],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next"
+    }
+  ]
+}
