@@ -3,6 +3,8 @@ import Head from 'next/head'
 import NProgress from 'nprogress'
 import Router from 'next/router'
 
+import NavBar from '../containers/Navbar'
+
 Router.events.on('routeChangeStart', url => {
   console.log(`Loading: ${url}`)
   NProgress.start()
@@ -10,7 +12,7 @@ Router.events.on('routeChangeStart', url => {
 Router.events.on('routeChangeComplete', () => NProgress.done())
 Router.events.on('routeChangeError', () => NProgress.done())
 
-export default ({ children, title = 'This is the default title' }) => (
+export default ({ children, title = 'Travesia Hotel' }) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -18,21 +20,11 @@ export default ({ children, title = 'This is the default title' }) => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <link rel='stylesheet' type='text/css' href='/static/nprogress.css' />
       <link href='https://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' />
+      <link rel='icon' type='image/png' href='static/favicon/favicon-32x32.png' sizes='32x32' />
+      <link rel='icon' type='image/png' href='static/favicon/favicon-16x16.png' sizes='16x16' />
     </Head>
     <header>
-      <nav>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>{' '}
-        |
-        <Link href='/about'>
-          <a>About</a>
-        </Link>{' '}
-        |
-        <Link href='/contact'>
-          <a>Contact</a>
-        </Link>
-      </nav>
+      <NavBar />
     </header>
 
     {children}
