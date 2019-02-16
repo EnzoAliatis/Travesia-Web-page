@@ -4,6 +4,7 @@ import Router from 'next/router'
 import TouchCarousel, { clamp } from 'react-touch-carousel'
 import touchWithMouseHOC from 'react-touch-carousel/lib/touchWithMouseHOC'
 import NonPassiveTouchTarget from './NonPassiveTouchTarget'
+import NavBar from '../containers/Navbar'
 
 import { CARUSEL_IMAGES } from '../data'
 
@@ -40,6 +41,7 @@ export default class Hero extends React.Component {
   render () {
     return (
       <div className='container'>
+        <NavBar />
         <TouchCarousel
           component={Container}
           cardCount={CARUSEL_IMAGES.length}
@@ -80,7 +82,7 @@ export default class Hero extends React.Component {
               align-items: center;
               justify-content: center;
               background: rgba(4, 4, 4, 0.29);
-              height: 30%;
+              height: 100px;
             }
           }
           @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {

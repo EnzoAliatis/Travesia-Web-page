@@ -49,11 +49,15 @@ export default class NavBar extends React.Component {
             .navbar {
               background: rgba(0, 0, 0, 0.5);
               display: grid;
-              grid-template: 150px / 500px 600px;
+              grid-template: 120px / 500px 600px;
               color: white;
-              align-items: center;
+              align-items: flex-end;
               justify-content: center;
-
+              position: absolute;
+              z-index: 999;
+              top: 0;
+              left: 0;
+              right: 0;
             }
             .menu {
               display: none;

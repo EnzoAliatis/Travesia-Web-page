@@ -2,7 +2,6 @@ import Head from 'next/head'
 import NProgress from 'nprogress'
 import Router from 'next/router'
 
-import NavBar from '../containers/Navbar'
 import Carrousel from '../containers/Carrousel'
 
 Router.events.on('routeChangeStart', url => {
@@ -25,11 +24,8 @@ export default ({ children, title = 'Travesia Hotel' }) => (
       <link rel='icon' type='image/png' href='static/favicon/favicon-16x16.png' sizes='16x16' />
     </Head>
     <header>
-      <NavBar />
-    </header>
-    <div className='containerCar'>
       <Carrousel />
-    </div>
+    </header>
 
     {children}
 
