@@ -4,6 +4,7 @@ import Router from 'next/router'
 
 import Carrousel from '../containers/Carrousel'
 import NavBar from '../containers/Navbar'
+import Footer from './Footer';
 
 
 Router.events.on('routeChangeStart', url => {
@@ -34,7 +35,7 @@ export default ({ children, title = 'Travesia Hotel' }) => (
 
     {children}
 
-    <footer>{'I`m here to stay'}</footer>
+    <footer><Footer /></footer>
 
     <style jsx global>{`
       body {

@@ -1,5 +1,4 @@
 import React from 'react'
-import Router from 'next/router'
 
 import TouchCarousel, { clamp } from 'react-touch-carousel'
 import touchWithMouseHOC from 'react-touch-carousel/lib/touchWithMouseHOC'
