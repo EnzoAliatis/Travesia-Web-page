@@ -27,7 +27,9 @@ export default ({ children, title = 'Travesia Hotel' }) => (
     <header>
       <NavBar />
     </header>
-    <Carrousel />
+    <div className='containerCar'>
+      <Carrousel />
+    </div>
 
     {children}
 
