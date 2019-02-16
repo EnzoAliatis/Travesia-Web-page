@@ -3,6 +3,8 @@ import NProgress from 'nprogress'
 import Router from 'next/router'
 
 import Carrousel from '../containers/Carrousel'
+import NavBar from '../containers/Navbar'
+
 
 Router.events.on('routeChangeStart', url => {
   console.log(`Loading: ${url}`)
@@ -24,6 +26,9 @@ export default ({ children, title = 'Travesia Hotel' }) => (
       <link rel='icon' type='image/png' href='static/favicon/favicon-16x16.png' sizes='16x16' />
     </Head>
     <header>
+      <div className='navbarContainer'>
+        <NavBar />
+      </div>
       <Carrousel />
     </header>
 
@@ -36,6 +41,13 @@ export default ({ children, title = 'Travesia Hotel' }) => (
         margin: 0;
         font-family: 'Roboto', sans-serif;
       }  
+    `}</style>
+    <style jsx>{`
+      @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+        .navbarContainer {
+          display: block;
+        }
+      }
     `}</style>
   </div>
 )

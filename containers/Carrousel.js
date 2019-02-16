@@ -41,7 +41,9 @@ export default class Hero extends React.Component {
   render () {
     return (
       <div className='container'>
-        <NavBar />
+        <div className='navbarContainer'>
+          <NavBar />
+        </div>
         <TouchCarousel
           component={Container}
           cardCount={CARUSEL_IMAGES.length}
@@ -109,6 +111,9 @@ export default class Hero extends React.Component {
               padding: 13px 33px;
               border-radius: 5px;
               font-weight: 400;
+            }
+            .navbarContainer {
+              display: none;
             }
           }
           
