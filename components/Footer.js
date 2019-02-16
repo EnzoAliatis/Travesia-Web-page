@@ -100,6 +100,10 @@ const Footer = () => (
         .recientes {
           grid-area: recientes;
         }
+        .recientes div {
+          border-bottom: solid #2B2F32 1px;
+          margin-bottom: 20px;
+        }
         .contactos h5 {
           margin-bottom: 25px;
         }
@@ -131,6 +135,10 @@ const Footer = () => (
         }
         .idiomas span {
           margin-right: 15px;
+        }
+        .recientes span {
+          font-size: 12px;
+          color: #848484;
         }
       }
       @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
