@@ -1,4 +1,4 @@
-import { HABITACIONES } from '../utils/data'
+import { HABITACIONES } from '../data'
 const SectionThree = () => (
   <div className='container'>
     <h2>

@@ -17,6 +17,32 @@ const SectionTwo = () => (
     <div className='IframeContainer'>
       <iframe width='98%' height='225px' src='https://www.youtube.com/embed/3kDKZkYREHE' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />    </div>
     <style jsx>{`
+      @media only screen  and (min-width : 1024px) {
+        .container {
+          background: #EBECED;
+          color: #515151;
+          padding: 60px 0 30px 0;
+          display: grid;
+          grid-template-columns: 550px 550px;
+          grid-template-rows: 350px;
+          grid-column-gap: 20px;
+          justify-content: center;
+        }  
+        .IframeContainer iframe {
+          height: 100%;
+        }
+        .info h2 {
+          font-size: 28px;
+          margin-bottom: 10px;
+          color: #515151;
+          font-weight: 400;
+        }
+        .info p {
+          margin: 0px 0px 10px 0px;
+          line-height: 185%;
+          text-align: justify;
+        }
+      }
       @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
         .container {
           background: #EBECED;
