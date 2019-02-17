@@ -50,7 +50,7 @@ const SectionReview = ({ data }) => (
           margin: 0;
         }
         .reviewContainer {
-          width: 70%;
+          width: 550px;
           margin: 20px 0px;
         }
         .reviewsContainer {
@@ -58,6 +58,7 @@ const SectionReview = ({ data }) => (
           align-items: center;
           flex-direction: row;
           width: 1300px;
+          justify-content: center;
         }
         .textoContainer {
           background: #546167;
@@ -89,7 +90,7 @@ const SectionReview = ({ data }) => (
           display: flex;
           align-items: center;
           margin-top: 30px;
-          margin-left: 130px;
+          margin-left: 75px;
         }
         .img img {
           border-radius: 50%;

@@ -122,7 +122,7 @@ export const REVIEWS_DATA = [
     id: 2,
     review: 'Love this little hotel. Has 8 rooms - or rather cabanas, each with its own semi private deck to sit on and watch the kids play in the pool or look just beyond the pool and watch the waves crash on the shore.',
     avatarUri: 'avatar2.jpg',
-    userName: 'Jhon P.',
+    userName: 'Jon P.',
     userSpan: 'Simple Luxurious Relaxation'
   }
 ]
