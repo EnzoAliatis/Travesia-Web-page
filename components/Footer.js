@@ -3,7 +3,7 @@ const Footer = () => (
   <div>
     <div className='container'>
       <div className='imgContainer'>
-        <img src='/static/logos/tinylogo.png' alt='logo' />
+        <img src='/static/logos/tinylogo.png' alt='Tynylogo' />
       </div>
       <div className='presentation'>
         <p>
