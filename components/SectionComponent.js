@@ -43,10 +43,15 @@ const SectionKiteSurf = ({ title, description, btnTitle, imgUrl, direction }) =>
           text-decoration: none;
           width: 90px;
           text-align: center;
+          transition: 0.3s;
         }
         .info p {
           line-height: 185%;
           font-weight: 300;
+        }
+        .info a:hover {
+          color: rgb(0, 44, 69);
+          background: #FFF;
         }
       }
 
@@ -55,7 +60,7 @@ const SectionKiteSurf = ({ title, description, btnTitle, imgUrl, direction }) =>
           background: rgb(65, 64, 64);
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: center !important;
           align-content: center;
           align-items: center;
           height: 472px;
