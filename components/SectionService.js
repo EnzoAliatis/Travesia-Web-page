@@ -105,40 +105,83 @@ const SectionServices = ({ data }) => (
     </div>
 
     <style jsx>{`
-      .container {
-        background: #E8E9EA;
-        color: #474747;
-        display: grid;
-        grid-template: auto / 50%;
-        justify-content: center;
-        padding: 50px 0;
-      }  
-      .title hr {
-        width: 30%;
-        border: solid #002C45 1.5px;
+      @media only screen  and (min-width : 1024px) {
+        .container {
+          background: #E8E9EA;
+          color: #474747;
+          display: grid;
+          grid-template: auto / 50%;
+          justify-content: center;
+          padding: 50px 0;
+        }  
+        .service svg {
+          width: 40px;
+          height: 40px;
+        }
+        .service span {
+          font-size: 22px;
+          margin-left: 30px;
+        }
+        .title h2 {
+          text-align: center;
+          margin: 0;
+        }
+        .title hr {
+          width: 70px;
+          border: solid #002C45 1.5px;
+        }
+        .services {
+          margin: 20px 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 40px;
+          grid-row-gap: 10px;
+
+        }
+        .service {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          color: #002C45;
+        }
       }
-      .title h2 {
-        text-align: center;
-        margin: 0;
-      }
-      .services {
-        margin: 20px 0;
-        display: flex;
-        flex-direction: column;
-      }
-      .service {
-        display: flex;
-        align-items: center;
-        margin: 10px 0;
-        color: #002C45;
-      }
-      .service svg {
-        width: 40px;
-        height: 40px;
-      }
-      .service span {
-        font-size: 22px;
-        margin-left: 30px;
+
+      @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+        .container {
+          background: #E8E9EA;
+          color: #474747;
+          display: grid;
+          grid-template: auto / 50%;
+          justify-content: center;
+          padding: 50px 0;
+        }  
+        .title hr {
+          width: 30%;
+          border: solid #002C45 1.5px;
+        }
+        .title h2 {
+          text-align: center;
+          margin: 0;
+        }
+        .services {
+          margin: 20px 0;
+          display: flex;
+          flex-direction: column;
+        }
+        .service {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          color: #002C45;
+        }
+        .service svg {
+          width: 40px;
+          height: 40px;
+        }
+        .service span {
+          font-size: 22px;
+          margin-left: 30px;
+        }
       }
     `}</style>
   </div>

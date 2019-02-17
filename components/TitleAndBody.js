@@ -14,6 +14,30 @@ const TitleAndBody = ({ title, body }) => (
     </div>
 
     <style jsx>{`
+      @media only screen  and (min-width : 1024px) {
+        .container {
+          display: grid;
+          grid-template: auto / 80%;
+          justify-content: center;
+          color: #474747;
+          margin: 40px 0;
+        }
+        .title h2 {
+          margin-bottom: 0;
+          font-size: 28px;
+        }
+        .title hr {
+          width: 70px;
+          border: solid #002C45 1.5px;
+          margin-left: 0;
+        }
+        .body p {
+          color: #5c5c5c;
+          font-size: 15px;
+          line-height: 185%;
+        }
+      }
+
       @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
         .container {
           display: grid;
