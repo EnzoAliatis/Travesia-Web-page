@@ -4,6 +4,8 @@ import SectionTravesia from '../components/SectionTravesia'
 import SectionTuHotel from '../components/SectionTuHotel'
 import SectionHabitaciones from '../components/SectionHabitaciones'
 import SectionComponent from '../components/SectionComponent'
+import BluePanelButton from '../components/BluePanelButton'
+
 import {
   KITESURF_DATA,
   HABITACIONES_DATA,
@@ -47,6 +49,10 @@ export default () => (
       btnTitle={NOSOTROS_DATA.btnTitle}
       imgUrl={NOSOTROS_DATA.imgUrl}
       direction={NOSOTROS_DATA.direction}
+    />
+    <BluePanelButton
+      title={BLUE_PANEL_ONE_HOME.title}
+      btnTitle={BLUE_PANEL_ONE_HOME.btnTitle}
     />
   </Layout>
 )
