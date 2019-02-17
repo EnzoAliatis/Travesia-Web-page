@@ -10,6 +10,11 @@ const SectionKiteSurf = ({ title, description, btnTitle, imgUrl, direction }) =>
     </div>
 
     <style jsx>{`
+      .info h4 {
+        margin: 0 0 15px 0;
+        font-size: 24px;
+      }
+
       @media only screen  and (min-width : 1024px) {
         .container { 
           height: 335px;
@@ -29,10 +34,6 @@ const SectionKiteSurf = ({ title, description, btnTitle, imgUrl, direction }) =>
           width: 500px;
           display: flex;
           flex-direction: column;
-        }
-        .info h4 {
-          margin: 0 0 15px 0;
-          font-size: 24px;
         }
         .info a {
           margin-top: 10px;
@@ -78,10 +79,6 @@ const SectionKiteSurf = ({ title, description, btnTitle, imgUrl, direction }) =>
           font-size: 15px;
           line-height: 185%;
           margin-bottom: 20px;
-        }
-        .info h4 {
-          margin: 0 0 15px 0;
-          font-size: 24px;
         }
         .info a {
           margin-top: 10px;

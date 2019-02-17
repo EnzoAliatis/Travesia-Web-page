@@ -30,6 +30,28 @@ const SectionReview = ({ data }) => (
     </div>
 
     <style jsx>{`
+      .title hr {
+        width: 50px; 
+        border-color: #FFF;
+        border-width: 1.5px;
+      }
+      .title h4 {
+        font-weight: 400;
+        font-size: 28px;
+        margin: 0;
+      }
+      .img img {
+        border-radius: 50%;
+        margin: 0px 20px;
+      }
+      .user p {
+        font-size: 18px;
+        margin: 0px;
+      }
+      .user span {
+        font-size: 14px;
+      }
+
       @media only screen  and (min-width : 1024px) {
         .container {
           background: #5E6C72;
@@ -39,16 +61,7 @@ const SectionReview = ({ data }) => (
           flex-direction: column;
           padding: 50px 0;
         }
-        .title hr {
-          width: 50px; 
-          border-color: #FFF;
-          border-width: 1.5px;
-        }
-        .title h4 {
-          font-weight: 400;
-          font-size: 28px;
-          margin: 0;
-        }
+        
         .reviewContainer {
           width: 550px;
           margin: 20px 0px;
@@ -70,7 +83,6 @@ const SectionReview = ({ data }) => (
           border-radius: .4em;
           width: 400px;
           margin: 0 auto;
-
         }
         .textoContainer:after {
           content: '';
@@ -92,17 +104,6 @@ const SectionReview = ({ data }) => (
           margin-top: 30px;
           margin-left: 75px;
         }
-        .img img {
-          border-radius: 50%;
-          margin: 0px 20px;
-        }
-        .user p {
-          font-size: 18px;
-          margin: 0px;
-        }
-        .user span {
-          font-size: 14px;
-        }
       }
 
       @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {   
@@ -117,16 +118,7 @@ const SectionReview = ({ data }) => (
         .title {
           margin-bottom: 25px;
         }
-        .title h4 {
-          font-weight: 400;
-          font-size: 28px;
-          margin: 0;
-        }
-        .title hr {
-          width: 50px; 
-          border-color: #FFF;
-          border-width: 1.5px;
-        }
+        
         .reviewContainer {
           width: 70%;
           margin: 20px 0px;
@@ -163,17 +155,6 @@ const SectionReview = ({ data }) => (
           display: flex;
           align-items: center;
           margin-top: 30px;
-        }
-        .img img {
-          border-radius: 50%;
-          margin: 0px 20px;
-        }
-        .user p {
-          font-size: 18px;
-          margin: 0px;
-        }
-        .user span {
-          font-size: 14px;
         }
       }
     `}</style>
