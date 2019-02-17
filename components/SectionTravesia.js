@@ -16,6 +16,7 @@ const SectionOne = () => (
         justify-items: center;
         justify-content: center;
         padding: 60px 0 40px 0;
+        font-weight: 300;
       }
       .container h2 {
         font-size: 28px;

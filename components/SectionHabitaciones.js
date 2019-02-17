@@ -25,16 +25,6 @@ const SectionThree = () => (
     </div>
 
     <style jsx>{`
-    @media only screen  and (min-width : 1024px) {
-      .container {
-        background: #FBFCFD;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 60px;
-        color: #515151;
-      }
-      
       .container h2 {
         font-size: 28px;
         margin-bottom: 10px;
@@ -45,41 +35,6 @@ const SectionThree = () => (
         border: solid 2px #03324D;
         width: 60px;
         margin-bottom: 5px;
-      }
-      .imgsContainer {
-        display: flex;
-      }
-      .imgsContainer img {
-        width: 285px;
-        height: 285px;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 9;
-        transition: transform .2s; 
-
-      }
-      .dataContainer {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-      }
-      .imgInfo {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        color: #FFF;
-        background: rgba(23, 49, 66, 0.6);
-        z-index: 10;
-        opacity: 0;
-        transition: 0.3s;
-        
       }
       .imgInfo h3 {
         font-size: 30px;
@@ -99,6 +54,50 @@ const SectionThree = () => (
       }
       .imgInfo p {
         margin: 5px 0;
+      }
+
+    @media only screen  and (min-width : 1024px) {
+      .container {
+        background: #FBFCFD;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+        color: #515151;
+        font-weight: 300px;
+      }
+      .imgsContainer {
+        display: flex;
+      }
+      .imgsContainer img {
+        width: 285px;
+        height: 285px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        transition: transform .2s; 
+      }
+      .dataContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .imgInfo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #FFF;
+        background: rgba(23, 49, 66, 0.6);
+        z-index: 10;
+        opacity: 0;
+        transition: 0.3s; 
       }
       .imgRoom {
         position: relative;
@@ -124,16 +123,7 @@ const SectionThree = () => (
         padding: 60px 0 40px 0;
         color: #515151;
       }  
-      .container h2 {
-        font-size: 28px;
-        margin-bottom: 10px;
-        font-weight: 400;
-      }
-      .container hr {
-        border: solid 2px #03324D;
-        width: 25%;
-        margin-bottom: 5px;
-      }
+      
       .imgsContainer {
         display: grid;
         grid-template: auto / 100%;
@@ -166,25 +156,6 @@ const SectionThree = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      }
-      .imgInfo h3 {
-        font-size: 30px;
-        font-weight: 400;
-        margin: 0;
-      }
-      .imgInfo h4 {
-        font-size: 35px;
-        font-weight: 700;
-        margin: 0;
-      }
-      .imgInfo h4 span {
-        font-size: 20px;
-        font-weight: 700;
-        margin: 0;
-        border: 0;
-      }
-      .imgInfo p {
-        margin: 5px 0;
       }
     }
     `}</style>
