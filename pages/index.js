@@ -5,6 +5,8 @@ import SectionTuHotel from '../components/SectionTuHotel'
 import SectionHabitaciones from '../components/SectionHabitaciones'
 import SectionComponent from '../components/SectionComponent'
 import BluePanelButton from '../components/BluePanelButton'
+import SectionReview from '../components/SectionReview'
+
 
 import {
   KITESURF_DATA,
@@ -54,5 +56,7 @@ export default () => (
       title={BLUE_PANEL_ONE_HOME.title}
       btnTitle={BLUE_PANEL_ONE_HOME.btnTitle}
     />
+    <SectionReview data={REVIEWS_DATA} />
+
   </Layout>
 )
