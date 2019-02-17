@@ -4,7 +4,7 @@ const SectionThree = () => (
     <h2>
       HABITACIONES
     </h2>
-    <span />
+    <hr />
     <p>
       comodidad frente al mar
     </p>
@@ -13,9 +13,10 @@ const SectionThree = () => (
         HABITACIONES.map(habitacion => (
           <div className='imgRoom' key={habitacion.id}>
             <div className='imgInfo'>
-              <h3>{habitacion.title}</h3>
-              <p>{habitacion.description}</p>
-              <h4>${habitacion.price}<span>/noche</span></h4>
+              <div className='dataContainer'>
+                <h3>{habitacion.title}</h3>
+                <p>{habitacion.description}</p>
+                <h4>${habitacion.price}<span>/noche</span></h4></div>
             </div>
             <img src={`/static/rooms/${habitacion.src}`} />
           </div>
@@ -24,6 +25,95 @@ const SectionThree = () => (
     </div>
 
     <style jsx>{`
+    @media only screen  and (min-width : 1024px) {
+      .container {
+        background: #FBFCFD;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+        color: #515151;
+      }
+      
+      .container h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .container hr {
+        border: solid 2px #03324D;
+        width: 60px;
+        margin-bottom: 5px;
+      }
+      .imgsContainer {
+        display: flex;
+      }
+      .imgsContainer img {
+        width: 285px;
+        height: 285px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        transition: transform .2s; 
+
+      }
+      .dataContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .imgInfo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #FFF;
+        background: rgba(23, 49, 66, 0.6);
+        z-index: 10;
+        opacity: 0;
+        transition: 0.3s;
+        
+      }
+      .imgInfo h3 {
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0;
+      }
+      .imgInfo h4 {
+        font-size: 35px;
+        font-weight: 700;
+        margin: 0;
+      }
+      .imgInfo h4 span {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        border: 0;
+      }
+      .imgInfo p {
+        margin: 5px 0;
+      }
+      .imgRoom {
+        position: relative;
+        width: 285px;
+        height: 285px;
+        margin: 0 10px;
+        overflow: hidden;
+      }
+      .imgInfo:hover {
+        opacity: 1;
+      }
+      .imgInfo:hover + img {
+        transform: scale(1.2);
+      }
+    }
     @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {  
       .container {
         background: #FBFCFD;
@@ -39,7 +129,7 @@ const SectionThree = () => (
         margin-bottom: 10px;
         font-weight: 400;
       }
-      .container span {
+      .container hr {
         border: solid 2px #03324D;
         width: 25%;
         margin-bottom: 5px;
