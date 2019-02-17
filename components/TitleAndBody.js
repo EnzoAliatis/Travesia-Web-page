@@ -14,14 +14,15 @@ const TitleAndBody = ({ title, body }) => (
     </div>
 
     <style jsx>{`
+      .container {
+        display: grid;
+        grid-template: auto / 80%;
+        justify-content: center;
+        color: #474747;
+        margin: 40px 0;
+        font-weight: 300;
+      }
       @media only screen  and (min-width : 1024px) {
-        .container {
-          display: grid;
-          grid-template: auto / 80%;
-          justify-content: center;
-          color: #474747;
-          margin: 40px 0;
-        }
         .title h2 {
           margin-bottom: 0;
           font-size: 28px;
@@ -39,13 +40,6 @@ const TitleAndBody = ({ title, body }) => (
       }
 
       @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
-        .container {
-          display: grid;
-          grid-template: auto / 70%;
-          justify-content: center;
-          color: #474747;
-          margin: 40px 0;
-        }
         .title h2 {
           margin-bottom: 0;
           font-size: 28px;
