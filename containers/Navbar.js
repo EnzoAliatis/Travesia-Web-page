@@ -34,13 +34,13 @@ export default class NavBar extends React.Component {
         </div>
         <ul className='menuItems' id='menuItems'>
           <li></li>
-          <Link href='/'><li>Home</li></Link>
-          <Link href='/rooms'><li>Habitaciones</li></Link>
-          <Link href='/hotel'><li>Hotel</li></Link>
-          <Link href='/loungebar'><li>Lounge Bar</li></Link>
-          <Link href='/santa-marianita'><li>Santa Marianita</li></Link>
-          <Link href='/kitesurf'><li>Kitesurf</li></Link>
-          <Link href='/contact'><li>Contacto</li></Link>
+          <Link href='/'><li id='home'>Home</li></Link>
+          <Link href='/rooms'><li id='rooms'>Habitaciones</li></Link>
+          <Link href='/hotel'><li id='hotel'>Hotel</li></Link>
+          <Link href='/loungebar'><li id='loungebar'>Lounge Bar</li></Link>
+          <Link href='/santa-marianita'><li id='stamarianita'>Santa Marianita</li></Link>
+          <Link href='/kitesurf'><li id='kitesurf'>Kitesurf</li></Link>
+          <Link href='/contact'><li id='contact'>Contacto</li></Link>
         </ul>
 
         <style jsx>{`
@@ -70,6 +70,10 @@ export default class NavBar extends React.Component {
             }
             .menuItems li {
               list-style-type: none;
+              cursor: pointer;
+            }
+            .active {
+              border-bottom: solid 2px #FFF;
             }
           
           }

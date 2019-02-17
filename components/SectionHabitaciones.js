@@ -1,4 +1,6 @@
 import { HABITACIONES } from '../data'
+import Link from 'next/link'
+
 const SectionThree = () => (
   <div className='container'>
     <h2>
@@ -11,15 +13,17 @@ const SectionThree = () => (
     <div className='imgsContainer'>
       {
         HABITACIONES.map(habitacion => (
-          <div className='imgRoom' key={habitacion.id}>
-            <div className='imgInfo'>
-              <div className='dataContainer'>
-                <h3>{habitacion.title}</h3>
-                <p>{habitacion.description}</p>
-                <h4>${habitacion.price}<span>/noche</span></h4></div>
+          <Link href='/rooms' key={habitacion.id}>
+            <div className='imgRoom'>
+              <div className='imgInfo'>
+                <div className='dataContainer'>
+                  <h3>{habitacion.title}</h3>
+                  <p>{habitacion.description}</p>
+                  <h4>${habitacion.price}<span>/noche</span></h4></div>
+              </div>
+              <img src={`/static/rooms/${habitacion.src}`} />
             </div>
-            <img src={`/static/rooms/${habitacion.src}`} />
-          </div>
+          </Link>
         ))
       }
     </div>
@@ -105,6 +109,7 @@ const SectionThree = () => (
         height: 285px;
         margin: 0 10px;
         overflow: hidden;
+        cursor: pointer;
       }
       .imgInfo:hover {
         opacity: 1;
