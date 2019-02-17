@@ -37,7 +37,7 @@ export default class NavBar extends React.Component {
           <Link href='/'><li>Home</li></Link>
           <Link href='/rooms'><li>Habitaciones</li></Link>
           <Link href='/hotel'><li>Hotel</li></Link>
-          <Link href='/loungeBar'><li>Lounge Bar</li></Link>
+          <Link href='/loungebar'><li>Lounge Bar</li></Link>
           <Link href='/staMarianita'><li>Santa Marianita</li></Link>
           <Link href='/kitesurf'><li>Kitesurf</li></Link>
           <Link href='/contact'><li>Contacto</li></Link>
