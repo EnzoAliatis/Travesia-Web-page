@@ -1,6 +1,6 @@
 
-const SectionKiteSurf = ({ title, description, btnTitle, imgUrl }) => (
-  <div className='container' style={{ backgroundImage: `url(${imgUrl})` }}>
+const SectionKiteSurf = ({ title, description, btnTitle, imgUrl, direction }) => (
+  <div className='container' style={{ backgroundImage: `url(${imgUrl})`, justifyContent: `${direction}` }}>
     <div className='info'>
       <h4>{title}</h4>
       <p>
@@ -10,6 +10,46 @@ const SectionKiteSurf = ({ title, description, btnTitle, imgUrl }) => (
     </div>
 
     <style jsx>{`
+      @media only screen  and (min-width : 1024px) {
+        .container { 
+          height: 335px;
+          color: #FFF;
+          display: flex;
+          align-items: center;
+          padding: 0 20%;
+          background-repeat:no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-position: center center;
+          background-attachment: scroll;
+        }
+        .info {
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+        }
+        .info h4 {
+          margin: 0 0 15px 0;
+          font-size: 24px;
+        }
+        .info a {
+          margin-top: 10px;
+          border: solid 1px #fff;
+          padding: 10px 25px;
+          border-radius: 50px;
+          color: #fff;
+          text-decoration: none;
+          width: 90px;
+          text-align: center;
+        }
+        .info p {
+          line-height: 185%;
+          font-weight: 300;
+        }
+      }
+
       @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {  
         .container {
           background: rgb(65, 64, 64);
@@ -19,7 +59,6 @@ const SectionKiteSurf = ({ title, description, btnTitle, imgUrl }) => (
           align-content: center;
           align-items: center;
           height: 472px;
-          background-image: url('../static/sections/kiteSurf.jpg');
           background-repeat: no-repeat, repeat;
           background-position: center;
           background-size: cover; 

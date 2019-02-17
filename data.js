@@ -72,28 +72,32 @@ export const KITESURF_DATA = {
   title: 'KITESURF',
   description: 'El Kitesurf es una actividad deportiva para personas en busca de nuevas experiencias en ambientes de naturaleza pura. Elementos característicos del Kitesurf son el agua, el sonido de las olas y el aire intenso.',
   btnTitle: 'Más info',
-  imgUrl: '/static/sections/kiteSurf.jpg'
+  imgUrl: '/static/sections/kiteSurf.jpg',
+  direction: 'flex-end'
 }
 
 export const HABITACIONES_DATA = {
   title: 'HABITACIONES',
-  description: 'Nuestras habitaciones son super cómodas y luminosas ya que todas cuentan con balcón privado con vista al mar. Aquí tendrás un espacio',
+  description: 'Nuestras habitaciones son super cómodas y luminosas ya que todas cuentan con balcón privado con vista al mar. Aquí tendrás un espacio suave  y relajante para desconectarte y despertar en una experiencia  verdaderamente rejuvenecedora.',
   btnTitle: 'Check Availability',
-  imgUrl: '/static/rooms/room1.jpg'
+  imgUrl: '/static/sections/habitaciones.jpg',
+  direction: 'flex-start'
 }
 
 export const STA_MARIANITA_DATA = {
   title: 'SANTA MARIANITA',
   description: 'Santa Marianita está ubicado a treinta minutos al sur de la ciudad de Manta, entre el Cabo de San Lorenzo y la Punta de San Mateo, donde forma un ensenada de 2 kilómetros y una extensa playa de 4 kilómetros, en la provincia de Manabí.',
   btnTitle: 'Más info',
-  imgUrl: '/static/sections/stamarianitaSection.jpg'
+  imgUrl: '/static/sections/stamarianitaSection.jpg',
+  direction: 'flex-end'
 }
 
 export const NOSOTROS_DATA = {
   title: 'NOSOTROS',
   description: 'Nuestras instalaciones turísticas en el balneario de Santa Marianita, Manta fueron diseñadas estratégicamente para cumplir con todas las necesidades de mayor demanda para aquellas personas que buscan tanto de la tranquilidad como de actividades recreacionales dignas de aventureros.',
   btnTitle: 'Conócenos',
-  imgUrl: '/static/sections/nosotrosSection.jpg'
+  imgUrl: '/static/sections/nosotrosSection.jpg',
+  direction: 'flex-start'
 }
 
 export const BLUE_PANEL_ONE_HOME = {
