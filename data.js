@@ -73,7 +73,8 @@ export const KITESURF_DATA = {
   description: 'El Kitesurf es una actividad deportiva para personas en busca de nuevas experiencias en ambientes de naturaleza pura. Elementos característicos del Kitesurf son el agua, el sonido de las olas y el aire intenso.',
   btnTitle: 'Más info',
   imgUrl: '/static/sections/kiteSurf.jpg',
-  direction: 'flex-end'
+  direction: 'flex-end',
+  sectionUrl: '/kitesurf'
 }
 
 export const HABITACIONES_DATA = {
@@ -81,7 +82,8 @@ export const HABITACIONES_DATA = {
   description: 'Nuestras habitaciones son super cómodas y luminosas ya que todas cuentan con balcón privado con vista al mar. Aquí tendrás un espacio suave  y relajante para desconectarte y despertar en una experiencia  verdaderamente rejuvenecedora.',
   btnTitle: 'Check Availability',
   imgUrl: '/static/sections/habitaciones.jpg',
-  direction: 'flex-start'
+  direction: 'flex-start',
+  sectionUrl: '/rooms'
 }
 
 export const STA_MARIANITA_DATA = {
@@ -89,7 +91,8 @@ export const STA_MARIANITA_DATA = {
   description: 'Santa Marianita está ubicado a treinta minutos al sur de la ciudad de Manta, entre el Cabo de San Lorenzo y la Punta de San Mateo, donde forma un ensenada de 2 kilómetros y una extensa playa de 4 kilómetros, en la provincia de Manabí.',
   btnTitle: 'Más info',
   imgUrl: '/static/sections/stamarianitaSection.jpg',
-  direction: 'flex-end'
+  direction: 'flex-end',
+  sectionUrl: '/santa-marianita'
 }
 
 export const NOSOTROS_DATA = {
@@ -97,7 +100,8 @@ export const NOSOTROS_DATA = {
   description: 'Nuestras instalaciones turísticas en el balneario de Santa Marianita, Manta fueron diseñadas estratégicamente para cumplir con todas las necesidades de mayor demanda para aquellas personas que buscan tanto de la tranquilidad como de actividades recreacionales dignas de aventureros.',
   btnTitle: 'Conócenos',
   imgUrl: '/static/sections/nosotrosSection.jpg',
-  direction: 'flex-start'
+  direction: 'flex-start',
+  sectionUrl: '/hotel'
 }
 
 export const BLUE_PANEL_ONE_HOME = {

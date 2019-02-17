@@ -4,7 +4,9 @@ const BluePanelButton = ({ title, btnTitle }) => (
       <h4>
         {title}
       </h4>
-      <a href='/'>{btnTitle}</a>
+      <a href='https://www.booking.com/hotel/ec/cabanas-la-travesia.en-gb.html?aid=356980;label=gog235jc-1DCAsoQUITY2FiYW5hcy1sYS10cmF2ZXNpYUgzWANoQYgBAZgBCbgBB8gBDNgBA-gBAYgCAagCAw;sid=13bd436102878bbd069e61052597e031;dist=0&group_adults=2&keep_landing=1&sb_price_type=total&type=total&'
+        target='_blank'>{btnTitle}</a>
+
     </div>
 
     <style jsx>{`

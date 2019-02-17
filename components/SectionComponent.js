@@ -1,12 +1,15 @@
+import Link from 'next/link'
 
-const SectionKiteSurf = ({ title, description, btnTitle, imgUrl, direction }) => (
+const SectionKiteSurf = ({ title, description, btnTitle, imgUrl, direction, sectionUrl }) => (
   <div className='container' style={{ backgroundImage: `url(${imgUrl})`, justifyContent: `${direction}` }}>
     <div className='info'>
       <h4>{title}</h4>
       <p>
         {description}
       </p>
-      <a href='/'>{btnTitle}</a>
+      <Link href={sectionUrl}>
+        <a>{btnTitle}</a>
+      </Link>
     </div>
 
     <style jsx>{`

@@ -25,6 +25,7 @@ export default () => (
       btnTitle={STA_MARIANITA_DATA.btnTitle}
       imgUrl={STA_MARIANITA_DATA.imgUrl}
       direction={STA_MARIANITA_DATA.direction}
+      sectionUrl={STA_MARIANITA_DATA.sectionUrl}
     />
     <SectionComponent
       title={KITESURF_DATA.title}
@@ -32,6 +33,7 @@ export default () => (
       btnTitle={KITESURF_DATA.btnTitle}
       imgUrl={KITESURF_DATA.imgUrl}
       direction={KITESURF_DATA.direction}
+      sectionUrl={KITESURF_DATA.sectionUrl}
     />
     <SectionReview data={REVIEWS_DATA_TWO} />
     <SectionQuestion />
