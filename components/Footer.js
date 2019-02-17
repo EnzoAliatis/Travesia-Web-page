@@ -105,7 +105,7 @@ const Footer = () => (
           margin-bottom: 20px;
         }
         .contactos h5 {
-          margin-bottom: 25px;
+          margin-bottom: 12px;
         }
         .contactos svg {
           width: 5%;
