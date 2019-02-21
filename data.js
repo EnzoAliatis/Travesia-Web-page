@@ -1,24 +1,48 @@
 export const CARUSEL_IMAGES = [
   {
-    src: 'carrousel/hero1.jpg'
+    src: 'carrousel/home/hero1.jpg'
   },
   {
-    src: 'carrousel/hero2.jpg'
+    src: 'carrousel/home/hero2.jpg'
   },
   {
-    src: 'carrousel/hero3.jpg'
+    src: 'carrousel/home/hero3.jpg'
   },
   {
-    src: 'carrousel/hero4.jpg'
+    src: 'carrousel/home/hero4.jpg'
   },
   {
-    src: 'carrousel/hero5.jpg'
+    src: 'carrousel/home/hero5.jpg'
   },
   {
-    src: 'carrousel/hero6.jpg'
+    src: 'carrousel/home/hero6.jpg'
   },
   {
-    src: 'carrousel/hero7.jpg'
+    src: 'carrousel/home/hero7.jpg'
+  }
+]
+
+export const CARUSEL_IMAGES_KITE = [
+  {
+    src: 'carrousel/kitesurf/kite1.jpg'
+  },
+  {
+    src: 'carrousel/kitesurf/kite2.jpg'
+  },
+  {
+    src: 'carrousel/kitesurf/kite3.jpg'
+  },
+  {
+    src: 'carrousel/kitesurf/kite4.jpg'
+  },
+  {
+    src: 'carrousel/kitesurf/kite5.jpg'
+  },
+  {
+    src: 'carrousel/kitesurf/kite5.jpg'
+  },
+  {
+    src: 'carrousel/kitesurf/kite5.jpg'
   }
 ]
 

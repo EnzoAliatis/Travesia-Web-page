@@ -1,11 +1,18 @@
 import React from 'react'
+import Router from 'next/router'
 
 import TouchCarousel, { clamp } from 'react-touch-carousel'
 import touchWithMouseHOC from 'react-touch-carousel/lib/touchWithMouseHOC'
 import NonPassiveTouchTarget from './NonPassiveTouchTarget'
 import NavBar from '../containers/Navbar'
 
-import { CARUSEL_IMAGES } from '../data'
+import { CARUSEL_IMAGES, CARUSEL_IMAGES_KITE } from '../data'
+
+let images = CARUSEL_IMAGES
+
+Router.events.on('routeChangeStart', url => {
+  console.log(CARUSEL_IMAGES_KITE)
+})
 
 const cardPadCount = 2
 
@@ -21,9 +28,9 @@ const Container = touchWithMouseHOC(CarouselContainer)
 
 export default class Hero extends React.Component {
   renderCard (index, modIndex, cursor) {
-    const item = CARUSEL_IMAGES[modIndex]
+    const item = CARUSEL_IMAGES_KITE[modIndex]
     const opacity = 1 - 1.5 * Math.abs(index + cursor)
-    const zIndex = opacity * CARUSEL_IMAGES.length
+    const zIndex = opacity * CARUSEL_IMAGES_KITE.length
     return (
       <div
         key={index}
