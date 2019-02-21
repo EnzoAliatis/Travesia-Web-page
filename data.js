@@ -13,12 +13,6 @@ export const CARUSEL_IMAGES = [
   },
   {
     src: 'carrousel/home/hero5.jpg'
-  },
-  {
-    src: 'carrousel/home/hero6.jpg'
-  },
-  {
-    src: 'carrousel/home/hero7.jpg'
   }
 ]
 
@@ -37,12 +31,60 @@ export const CARUSEL_IMAGES_KITE = [
   },
   {
     src: 'carrousel/kitesurf/kite5.jpg'
+  }
+]
+
+export const CARUSEL_IMAGES_ROOMS = [
+  {
+    src: 'carrousel/rooms/room1.jpg'
   },
   {
-    src: 'carrousel/kitesurf/kite5.jpg'
+    src: 'carrousel/rooms/room2.jpg'
   },
   {
-    src: 'carrousel/kitesurf/kite5.jpg'
+    src: 'carrousel/rooms/room3.jpg'
+  },
+  {
+    src: 'carrousel/rooms/room4.jpg'
+  },
+  {
+    src: 'carrousel/rooms/room5.jpg'
+  }
+]
+
+export const CARUSEL_IMAGES_HOTEL = [
+  {
+    src: 'carrousel/hotel/hotel1.jpg'
+  },
+  {
+    src: 'carrousel/hotel/hotel2.jpg'
+  },
+  {
+    src: 'carrousel/hotel/hotel3.jpg'
+  },
+  {
+    src: 'carrousel/hotel/hotel4.jpg'
+  },
+  {
+    src: 'carrousel/hotel/hotel5.jpg'
+  }
+]
+
+export const CARUSEL_IMAGES_BAR = [
+  {
+    src: 'carrousel/bar/bar1.jpg'
+  },
+  {
+    src: 'carrousel/bar/bar2.jpg'
+  },
+  {
+    src: 'carrousel/bar/bar3.jpg'
+  },
+  {
+    src: 'carrousel/bar/bar4.jpg'
+  },
+  {
+    src: 'carrousel/bar/bar5.jpg'
   }
 ]
 

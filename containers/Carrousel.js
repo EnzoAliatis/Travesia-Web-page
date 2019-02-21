@@ -6,13 +6,15 @@ import touchWithMouseHOC from 'react-touch-carousel/lib/touchWithMouseHOC'
 import NonPassiveTouchTarget from './NonPassiveTouchTarget'
 import NavBar from '../containers/Navbar'
 
-import { CARUSEL_IMAGES, CARUSEL_IMAGES_KITE } from '../data'
+import {
+  CARUSEL_IMAGES,
+  CARUSEL_IMAGES_KITE,
+  CARUSEL_IMAGES_ROOMS,
+  CARUSEL_IMAGES_HOTEL,
+  CARUSEL_IMAGES_BAR
+} from '../data'
 
 let images = CARUSEL_IMAGES
-
-Router.events.on('routeChangeStart', url => {
-  console.log(CARUSEL_IMAGES_KITE)
-})
 
 const cardPadCount = 2
 
@@ -28,9 +30,32 @@ const Container = touchWithMouseHOC(CarouselContainer)
 
 export default class Hero extends React.Component {
   renderCard (index, modIndex, cursor) {
-    const item = CARUSEL_IMAGES_KITE[modIndex]
+    Router.events.on('routeChangeStart', url => {
+      if (url === '/') {
+        images = CARUSEL_IMAGES
+      }
+      if (url === '/rooms') {
+        images = CARUSEL_IMAGES_ROOMS
+      }
+      if (url === '/hotel') {
+        images = CARUSEL_IMAGES_HOTEL
+      }
+      if (url === '/loungebar') {
+        images = CARUSEL_IMAGES_BAR
+      }
+      if (url === '/santa-marianita') {
+        images = CARUSEL_IMAGES
+      }
+      if (url === '/contact') {
+        images = CARUSEL_IMAGES_HOTEL
+      }
+      if (url === '/kitesurf') {
+        images = CARUSEL_IMAGES_KITE
+      }
+    })
+    const item = images[modIndex]
     const opacity = 1 - 1.5 * Math.abs(index + cursor)
-    const zIndex = opacity * CARUSEL_IMAGES_KITE.length
+    const zIndex = opacity * images.length
     return (
       <div
         key={index}
@@ -44,7 +69,7 @@ export default class Hero extends React.Component {
       </div>
     )
   }
-  render () {
+  render() {
     return (
       <div className='container'>
         <div className='navbarContainer'>
