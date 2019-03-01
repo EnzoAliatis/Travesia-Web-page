@@ -107,7 +107,7 @@ export const HABITACIONES = [
   {
     id: '1',
     title: 'MATRIMONIAL',
-    description: '2 huéspedes, 1 cama King.',
+    description: '2 huéspedes, 1 cama Queen.',
     price: '89,00',
     src: 'room1.jpg'
   },
