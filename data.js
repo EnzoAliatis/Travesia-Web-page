@@ -114,21 +114,21 @@ export const HABITACIONES = [
   {
     id: '2',
     title: 'DOBLE',
-    description: '2 huéspedes, 2 cama Queen.',
+    description: '2 huéspedes, 2 camas Queen.',
     price: '99,00',
     src: 'room2.jpg'
   },
   {
     id: '3',
     title: 'TRIPLE',
-    description: '3 huéspedes, 2 cama Queen.',
+    description: '3 huéspedes, 2 camas Queen.',
     price: '119,00',
     src: 'room3.jpg'
   },
   {
     id: '4',
-    title: 'CUATRUPLE',
-    description: '4 huéspedes, 2 cama Queen.',
+    title: 'CUADRUPLE',
+    description: '4 huéspedes, 2 camas Queen.',
     price: '139,00',
     src: 'room4.jpg'
   }
